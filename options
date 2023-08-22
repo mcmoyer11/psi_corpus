@@ -1,0 +1,9 @@
+data=/Users/momo/Dropbox/projects/perspective-sensitivity/corpus_swbd/data/
+results=/Users/momo/Dropbox/projects/perspective-sensitivity/corpus_swbd/results/
+
+init ID
+
+add StringVar Sentence
+add StringVar Psi
+add ParseVar SentenceParse
+add ParseVar PsiParse

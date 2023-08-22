@@ -1,0 +1,10 @@
+@ WORD          /^'{0,1}[a-zA-Z]+.*/;
+@ TERMINAL      * !< *;
+@ NP            /^NP/;
+@ VP            /^VP/;
+@ PP            /^PP/;
+@ DISFL         /EDITED|UH|PRN|-UNF/;
+@ PPPP          (@VP=vp1 < (@PP=pp1 !<< -NONE- $.. (@PP=pp2 !<< -NONE- !$ (@PP != =pp1) !,, (@TERMINAL ,, =pp1 !>> (@DISFL >> =vp1)))));
+@ LOCATIVE	"left|right|behind|front|next|north|south|east|west"
+@ SOCOREL	"local|regional|foreigner|neighbor|home|visiting|immigrant|heathen"
+@ PSI		(@LOCATIVE | @SOCOREL)
